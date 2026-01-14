@@ -1,0 +1,172 @@
+/**
+ * LabelControl Component Styles
+ * Based on Game UI Wireframe Kit
+ */
+
+/* Base Label Control */
+.onyx-label-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  max-width: 650px;
+  padding: 16px 20px;
+  background-color: var(--color-grey-10);
+  border-radius: var(--radius-md);
+  border: var(--border-base) solid transparent;
+  transition: border-color var(--transition-fast);
+}
+
+.onyx-label-control--focused {
+  border-color: var(--color-grey-80);
+}
+
+.onyx-label-control--disabled {
+  opacity: 0.5;
+}
+
+.onyx-label-control__label {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-grey-80);
+}
+
+.onyx-label-control__content {
+  flex-shrink: 0;
+}
+
+/* RTL Support */
+.onyx-label-control--rtl {
+  flex-direction: row-reverse;
+}
+
+.onyx-label-control--rtl .onyx-label-control__label {
+  text-align: right;
+}
+
+/* Label Control Progress */
+.onyx-label-control-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  max-width: 650px;
+  padding: 16px 20px;
+  background-color: var(--color-grey-10);
+  border-radius: var(--radius-md);
+  border: var(--border-base) solid transparent;
+}
+
+.onyx-label-control-progress--focused {
+  border-color: var(--color-grey-80);
+}
+
+.onyx-label-control-progress--disabled {
+  opacity: 0.5;
+}
+
+.onyx-label-control-progress__label {
+  flex-shrink: 0;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-grey-80);
+}
+
+.onyx-label-control-progress__bar {
+  flex: 1;
+  max-width: 200px;
+}
+
+.onyx-label-control-progress__track {
+  height: 8px;
+  background-color: var(--color-grey-30);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.onyx-label-control-progress__fill {
+  height: 100%;
+  background-color: var(--color-grey-80);
+  border-radius: var(--radius-full);
+  transition: width var(--transition-base);
+}
+
+/* Label Control Toggle */
+.onyx-label-control-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  max-width: 650px;
+  padding: 16px 20px;
+  background-color: var(--color-grey-10);
+  border-radius: var(--radius-md);
+  border: var(--border-base) solid transparent;
+}
+
+.onyx-label-control-toggle--focused {
+  border-color: var(--color-grey-80);
+}
+
+.onyx-label-control-toggle--disabled {
+  opacity: 0.5;
+}
+
+.onyx-label-control-toggle__label {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-grey-80);
+}
+
+.onyx-label-control-toggle__switch {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.onyx-label-control-toggle__switch:disabled {
+  cursor: not-allowed;
+}
+
+.onyx-label-control-toggle__track {
+  display: block;
+  position: relative;
+  width: 52px;
+  height: 28px;
+  background-color: var(--color-grey-30);
+  border-radius: var(--radius-full);
+  transition: background-color var(--transition-fast);
+}
+
+.onyx-label-control-toggle--checked .onyx-label-control-toggle__track {
+  background-color: var(--color-grey-80);
+}
+
+.onyx-label-control-toggle__thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--color-primary-white);
+  border-radius: var(--radius-full);
+  transition: transform var(--transition-fast);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.onyx-label-control-toggle--checked .onyx-label-control-toggle__thumb {
+  transform: translateX(24px);
+}
+
+/* RTL Support */
+.onyx-label-control-progress--rtl,
+.onyx-label-control-toggle--rtl {
+  flex-direction: row-reverse;
+}

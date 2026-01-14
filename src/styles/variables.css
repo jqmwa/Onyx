@@ -1,0 +1,99 @@
+/**
+ * CSS Custom Properties - Design Tokens
+ * Game UI Wireframe Kit
+ */
+
+:root {
+  /* Primary colors */
+  --color-primary-white: #ffffff;
+  --color-primary-black: #000000;
+
+  /* Grey scale */
+  --color-grey-10: #e8e8e8;
+  --color-grey-20: #d4d4d4;
+  --color-grey-30: #cbcbcb;
+  --color-grey-40: #a3a3a3;
+  --color-grey-50: #8b8b8b;
+  --color-grey-60: #6f6f6f;
+  --color-grey-70: #575757;
+  --color-grey-80: #434343;
+  --color-grey-90: #2b2b2b;
+  --color-grey-100: #1a1a1a;
+
+  /* Dark theme colors */
+  --color-dark-primary: #1a1a1a;
+  --color-dark-secondary: #7b7b7b;
+
+  /* State colors */
+  --color-state-error: #e53935;
+  --color-state-success: #43a047;
+  --color-state-warning: #fb8c00;
+  --color-state-info: #1e88e5;
+
+  /* Typography */
+  --font-family-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-arabic: 'Noto Sans Arabic', sans-serif;
+  --font-family-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 30px;
+  --font-size-4xl: 36px;
+  --font-size-5xl: 48px;
+
+  --line-height-none: 1;
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+
+  /* Spacing */
+  --spacing-0: 0px;
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+
+  /* Border radius */
+  --radius-none: 0px;
+  --radius-sm: 2px;
+  --radius-base: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-full: 9999px;
+
+  /* Border width */
+  --border-none: 0px;
+  --border-thin: 1px;
+  --border-base: 2px;
+  --border-thick: 3px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+
+  /* Icon sizes */
+  --icon-size-sm: 16px;
+  --icon-size-md: 24px;
+  --icon-size-lg: 32px;
+  --icon-size-xl: 48px;
+  --icon-size-2xl: 64px;
+}

@@ -1,0 +1,95 @@
+/**
+ * Minimap Component Styles
+ * Based on Game UI Wireframe Kit
+ */
+
+.onyx-minimap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.onyx-minimap__container {
+  position: relative;
+  width: var(--minimap-size);
+  height: var(--minimap-size);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.onyx-minimap__content {
+  width: 100%;
+  height: 100%;
+}
+
+/* Theme: Dark */
+.onyx-minimap--dark .onyx-minimap__container {
+  background-color: var(--color-grey-90);
+  border: var(--border-base) solid var(--color-grey-70);
+}
+
+/* Theme: Light */
+.onyx-minimap--light .onyx-minimap__container {
+  background-color: var(--color-grey-20);
+  border: var(--border-base) solid var(--color-grey-40);
+}
+
+/* Compass */
+.onyx-minimap__compass {
+  position: absolute;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+}
+
+/* Compass: Outside */
+.onyx-minimap--compass-outside {
+  padding: 24px;
+}
+
+.onyx-minimap__compass--outside .onyx-minimap__compass-marker {
+  position: absolute;
+}
+
+.onyx-minimap__compass-marker--n {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.onyx-minimap__compass-marker--e {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.onyx-minimap__compass-marker--s {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.onyx-minimap__compass-marker--w {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.onyx-minimap--dark .onyx-minimap__compass-marker {
+  color: var(--color-primary-white);
+}
+
+.onyx-minimap--light .onyx-minimap__compass-marker {
+  color: var(--color-grey-80);
+}
+
+/* Compass: Inside */
+.onyx-minimap__compass--inside {
+  inset: 8px;
+}
+
+.onyx-minimap__compass--inside .onyx-minimap__compass-marker {
+  position: absolute;
+  font-size: var(--font-size-xs);
+}

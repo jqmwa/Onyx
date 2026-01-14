@@ -1,0 +1,64 @@
+/**
+ * Scrollbar Component Styles
+ * Based on Game UI Wireframe Kit
+ */
+
+.onyx-scrollbar {
+  display: flex;
+  user-select: none;
+}
+
+.onyx-scrollbar__track {
+  position: relative;
+  background-color: var(--color-grey-20);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+}
+
+.onyx-scrollbar__thumb {
+  position: absolute;
+  background-color: var(--color-grey-50);
+  border-radius: var(--radius-full);
+  transition: background-color var(--transition-fast);
+}
+
+/* Horizontal */
+.onyx-scrollbar--horizontal {
+  width: 350px;
+  height: 10px;
+}
+
+.onyx-scrollbar--horizontal .onyx-scrollbar__track {
+  width: 100%;
+  height: 100%;
+}
+
+.onyx-scrollbar--horizontal .onyx-scrollbar__thumb {
+  height: 100%;
+  min-width: 40px;
+}
+
+/* Vertical */
+.onyx-scrollbar--vertical {
+  width: 10px;
+  height: 350px;
+}
+
+.onyx-scrollbar--vertical .onyx-scrollbar__track {
+  width: 100%;
+  height: 100%;
+}
+
+.onyx-scrollbar--vertical .onyx-scrollbar__thumb {
+  width: 100%;
+  min-height: 40px;
+}
+
+/* States */
+.onyx-scrollbar--hover .onyx-scrollbar__thumb {
+  background-color: var(--color-grey-60);
+}
+
+.onyx-scrollbar--dragged .onyx-scrollbar__thumb {
+  background-color: var(--color-grey-80);
+}

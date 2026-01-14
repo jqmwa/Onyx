@@ -1,0 +1,30 @@
+/**
+ * Icon Component Styles
+ */
+
+.onyx-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: color var(--transition-fast);
+}
+
+.onyx-icon--filled path,
+.onyx-icon--filled rect,
+.onyx-icon--filled circle {
+  fill: currentColor;
+}
+
+.onyx-icon--outline path,
+.onyx-icon--outline rect,
+.onyx-icon--outline circle {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.onyx-icon--outline[data-filled] path,
+.onyx-icon--outline[data-filled] rect {
+  fill: currentColor;
+}

@@ -1,0 +1,67 @@
+/**
+ * AudioPlayer Component Styles
+ * Based on Game UI Wireframe Kit
+ */
+
+.onyx-audio-player {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 465px;
+  height: 50px;
+  padding: 8px 16px;
+  background-color: var(--color-grey-10);
+  border-radius: var(--radius-lg);
+}
+
+.onyx-audio-player__play-btn,
+.onyx-audio-player__volume-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: var(--color-grey-80);
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.onyx-audio-player__play-btn:hover,
+.onyx-audio-player__volume-btn:hover {
+  color: var(--color-grey-100);
+}
+
+.onyx-audio-player__play-btn svg,
+.onyx-audio-player__volume-btn svg {
+  width: 100%;
+  height: 100%;
+}
+
+.onyx-audio-player__progress {
+  flex: 1;
+  height: 8px;
+}
+
+.onyx-audio-player__track {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-grey-30);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.onyx-audio-player__fill {
+  height: 100%;
+  background-color: var(--color-grey-80);
+  border-radius: var(--radius-full);
+  transition: width var(--transition-fast);
+}
+
+/* RTL Support */
+.onyx-audio-player--rtl {
+  flex-direction: row-reverse;
+}

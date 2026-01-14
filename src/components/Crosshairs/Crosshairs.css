@@ -1,0 +1,16 @@
+/**
+ * Crosshairs Component Styles
+ * Based on Game UI Wireframe Kit
+ */
+
+.onyx-crosshairs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--crosshair-color, var(--color-grey-80));
+}
+
+.onyx-crosshairs svg {
+  width: 100%;
+  height: 100%;
+}

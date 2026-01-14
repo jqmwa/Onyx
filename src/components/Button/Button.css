@@ -1,0 +1,127 @@
+/**
+ * Button Component Styles
+ * Based on Game UI Wireframe Kit
+ */
+
+.onyx-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  height: 54px;
+  padding: 15px 60px;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.onyx-button:focus-visible {
+  outline: 2px solid var(--color-grey-80);
+  outline-offset: 2px;
+}
+
+.onyx-button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+/* Primary Style */
+.onyx-button--primary {
+  background-color: var(--color-grey-50);
+  color: var(--color-primary-white);
+}
+
+.onyx-button--primary:hover:not(:disabled) {
+  background-color: var(--color-grey-80);
+}
+
+.onyx-button--primary.onyx-button--disabled,
+.onyx-button--primary:disabled {
+  background-color: var(--color-grey-30);
+  color: var(--color-grey-50);
+  cursor: not-allowed;
+}
+
+/* Outline Style */
+.onyx-button--outline {
+  background-color: transparent;
+  border: var(--border-thin) solid var(--color-grey-60);
+  color: var(--color-grey-80);
+}
+
+.onyx-button--outline:hover:not(:disabled) {
+  border-width: var(--border-thick);
+  border-color: var(--color-grey-80);
+}
+
+.onyx-button--outline.onyx-button--disabled,
+.onyx-button--outline:disabled {
+  border-color: var(--color-dark-secondary);
+  color: var(--color-grey-50);
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Prompt Style (with icon) */
+.onyx-button--prompt {
+  padding: 15px 10px;
+  gap: 30px;
+  background-color: var(--color-dark-secondary);
+  color: var(--color-primary-white);
+}
+
+.onyx-button--prompt:hover:not(:disabled) {
+  background-color: var(--color-grey-80);
+}
+
+.onyx-button--prompt.onyx-button--disabled,
+.onyx-button--prompt:disabled {
+  background-color: var(--color-grey-30);
+  cursor: not-allowed;
+}
+
+/* Button Parts */
+.onyx-button__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+}
+
+.onyx-button__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.onyx-button__label {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* RTL Support */
+.onyx-button--rtl {
+  direction: rtl;
+  font-family: var(--font-family-primary), var(--font-family-arabic);
+}
+
+.onyx-button--rtl .onyx-button__label {
+  text-align: right;
+}
+
+.onyx-button--rtl.onyx-button--prompt {
+  flex-direction: row-reverse;
+}

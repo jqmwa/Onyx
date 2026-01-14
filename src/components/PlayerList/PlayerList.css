@@ -1,0 +1,85 @@
+/**
+ * PlayerList Component Styles
+ * Based on Game UI Wireframe Kit
+ */
+
+.onyx-player-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.onyx-player-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 50px;
+  padding: 8px 12px;
+  background-color: var(--color-grey-10);
+  border-radius: var(--radius-md);
+}
+
+.onyx-player-item__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-grey-30);
+  overflow: hidden;
+  color: var(--color-grey-60);
+}
+
+.onyx-player-item__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.onyx-player-item__avatar svg {
+  width: 100%;
+  height: 100%;
+}
+
+.onyx-player-item__name {
+  flex: 1;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-grey-80);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.onyx-player-item__status {
+  width: 24px;
+  height: 24px;
+  color: var(--color-grey-60);
+}
+
+.onyx-player-item__status svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Speaking State */
+.onyx-player-item--speaking {
+  background-color: var(--color-grey-20);
+}
+
+.onyx-player-item--speaking .onyx-player-item__status {
+  color: var(--color-state-success);
+}
+
+/* Muted State */
+.onyx-player-item--muted .onyx-player-item__status {
+  color: var(--color-state-error);
+}
+
+/* RTL Support */
+.onyx-player-item--rtl {
+  flex-direction: row-reverse;
+}
+
+.onyx-player-item--rtl .onyx-player-item__name {
+  text-align: right;
+}

@@ -1,0 +1,141 @@
+/**
+ * Showcase Page Styles
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  font-family: var(--font-family-primary);
+}
+
+.showcase {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.showcase__header {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.showcase__title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 16px;
+}
+
+.showcase__subtitle {
+  font-size: 18px;
+  color: #6f6f6f;
+  margin: 0;
+}
+
+.showcase__section {
+  margin-bottom: 64px;
+}
+
+.showcase__section-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 8px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.showcase__section-desc {
+  font-size: 14px;
+  color: #8b8b8b;
+  margin: 0 0 24px;
+}
+
+.showcase__grid {
+  display: grid;
+  gap: 24px;
+}
+
+.showcase__grid--2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.showcase__grid--3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.showcase__grid--4 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.showcase__card {
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.showcase__card-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #8b8b8b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 16px;
+}
+
+.showcase__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.showcase__col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.showcase__icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+  gap: 8px;
+}
+
+.showcase__icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.showcase__icon-item:hover {
+  background-color: #f5f5f5;
+}
+
+.showcase__icon-label {
+  font-size: 10px;
+  color: #8b8b8b;
+  text-align: center;
+  word-break: break-word;
+}
+
+/* Dark section for game components */
+.showcase__dark {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.showcase__dark .showcase__card-title {
+  color: #a0a0a0;
+}
