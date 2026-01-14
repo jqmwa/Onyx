@@ -1,4 +1,4 @@
-// AI Agent Characters for ONYX DAO Governance Game
+// AI Agent Characters for Autocrat DAO Governance Game
 
 export interface AgentCharacter {
   id: string;

@@ -1,4 +1,4 @@
-// DAO Governance Proposals for ONYX Game
+// DAO Governance Proposals for Autocrat Game
 
 import { Proposal } from './types';
 

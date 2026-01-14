@@ -1,5 +1,5 @@
 /**
- * ONYX - DAO Governance Game
+ * Autocrat - DAO Governance Game
  * Custom styles with Orbitron (titles) + Pixelify Sans (body)
  */
 
@@ -65,10 +65,7 @@
   font-size: 6rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  background: linear-gradient(135deg, #fff 0%, var(--game-accent) 50%, var(--game-accent-alt) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--game-accent, #00f5ff);
   text-shadow: none;
   filter: drop-shadow(0 0 30px rgba(0, 245, 255, 0.5));
   animation: titleGlow 3s ease-in-out infinite;
@@ -79,7 +76,7 @@
     filter: drop-shadow(0 0 30px rgba(0, 245, 255, 0.5));
   }
   50% { 
-    filter: drop-shadow(0 0 50px rgba(0, 245, 255, 0.8)) drop-shadow(0 0 80px rgba(255, 0, 170, 0.4));
+    filter: drop-shadow(0 0 50px rgba(0, 245, 255, 0.8));
   }
 }
 
@@ -1126,7 +1123,7 @@
   color: var(--game-text-dim);
 }
 
-.agent-stat .onyx-progress-bar {
+.agent-stat .autocrat-progress-bar {
   height: 6px;
 }
 

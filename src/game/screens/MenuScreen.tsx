@@ -60,7 +60,7 @@ export function MenuScreen({ onStartGame }: MenuScreenProps) {
 
       <div className="social-links">
         <a 
-          href="https://discord.gg/onyx" 
+          href="https://discord.gg/autocrat" 
           target="_blank" 
           rel="noopener noreferrer"
           className="social-button social-button--discord"
@@ -69,7 +69,7 @@ export function MenuScreen({ onStartGame }: MenuScreenProps) {
           Join Discord
         </a>
         <a 
-          href="https://t.me/onyxgame" 
+          href="https://t.me/autocratgame" 
           target="_blank" 
           rel="noopener noreferrer"
           className="social-button social-button--telegram"

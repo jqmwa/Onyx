@@ -1,7 +1,7 @@
-ONYX GAME UI - COMPONENT SPECIFICATIONS
+AUTOCRAT GAME UI - COMPONENT SPECIFICATIONS
 ========================================
 
-This document provides detailed specifications for all components in the Onyx Game UI library.
+This document provides detailed specifications for all components in the Autocrat Game UI library.
 
 ================================================================================
 BUTTON COMPONENT

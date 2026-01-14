@@ -1,4 +1,4 @@
-// Game Types for ONYX DAO Governance Game
+// Game Types for Autocrat DAO Governance Game
 
 export type GameScreen = 'intro' | 'menu' | 'treasury' | 'character-select' | 'game' | 'result';
 

@@ -1,4 +1,4 @@
-# Onyx Game UI
+# Autocrat Game UI
 
 A comprehensive React component library for game interfaces, based on the Game UI Wireframe Kit from Figma.
 
@@ -14,14 +14,14 @@ A comprehensive React component library for game interfaces, based on the Game U
 ## Installation
 
 ```bash
-npm install @onyx/game-ui
+npm install @autocrat/game-ui
 ```
 
 ## Quick Start
 
 ```tsx
-import { Button, Toggle, Healthbar, Crosshairs } from '@onyx/game-ui';
-import '@onyx/game-ui/dist/index.css';
+import { Button, Toggle, Healthbar, Crosshairs } from '@autocrat/game-ui';
+import '@autocrat/game-ui/dist/index.css';
 
 function App() {
   return (

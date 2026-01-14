@@ -43,7 +43,7 @@ export function IntroScreen({ onEnter }: IntroScreenProps) {
       </div>
 
       <div className="intro-screen__logo">
-        <h1 className="game-title">ONYX</h1>
+        <h1 className="game-title">AUTOCRAT</h1>
         <p className="game-subtitle">DAO GOVERNANCE GAME</p>
       </div>
 

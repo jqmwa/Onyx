@@ -60,24 +60,13 @@ export default function App() {
   return (
     <div className="showcase">
       <header className="showcase__header">
-        <h1 className="showcase__title">Onyx Game UI</h1>
+        <h1 className="showcase__title">Autocrat Game UI</h1>
         <p className="showcase__subtitle">A comprehensive design system for game interfaces</p>
-        <a 
-          href="/game.html" 
-          style={{ 
-            display: 'inline-block',
-            marginTop: '1rem',
-            padding: '12px 24px',
-            background: 'linear-gradient(135deg, #00f5ff 0%, #ff00aa 100%)',
-            color: '#fff',
-            fontWeight: 600,
-            textDecoration: 'none',
-            borderRadius: '6px',
-            transition: 'transform 0.2s'
-          }}
-        >
-          🎮 Play ONYX Game →
-        </a>
+        <div className="showcase__header-actions">
+          <a href="/game.html" className="showcase__game-link">
+            🎮 Play Autocrat Game
+          </a>
+        </div>
       </header>
 
       {/* Icons Section */}
