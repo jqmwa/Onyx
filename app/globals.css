@@ -51,11 +51,11 @@
   }
 
   .step-circle-complete {
-    @apply bg-onyx-complete-light text-onyx-complete border-onyx-complete/30;
+    @apply bg-onyx-circle-bg text-onyx-circle-icon border-onyx-circle-bg;
   }
 
   .step-circle-pending {
-    @apply bg-onyx-surface text-onyx-text-muted border-onyx-border;
+    @apply bg-onyx-circle-bg text-onyx-text-muted border-onyx-circle-bg;
   }
 }
 

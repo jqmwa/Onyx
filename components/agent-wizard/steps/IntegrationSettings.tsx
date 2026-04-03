@@ -29,7 +29,7 @@ export function IntegrationSettings({
               onClick={() => onToggle(integration.id)}
               className={`p-4 rounded-onyx-lg border text-left transition-all duration-150 ${
                 integration.connected
-                  ? "border-onyx-complete/40 bg-onyx-complete-light"
+                  ? "border-onyx-border-strong bg-onyx-circle-bg/50"
                   : "border-onyx-border-subtle bg-onyx-surface hover:border-onyx-border-strong"
               }`}
             >
@@ -43,8 +43,8 @@ export function IntegrationSettings({
                   </div>
                 </div>
                 {integration.connected && (
-                  <div className="w-5 h-5 rounded-full bg-onyx-complete flex items-center justify-center flex-shrink-0">
-                    <Check size="sm" customSize={12} className="text-white" />
+                  <div className="w-5 h-5 rounded-full bg-onyx-circle-bg flex items-center justify-center flex-shrink-0">
+                    <Check size="sm" customSize={12} className="text-onyx-circle-icon" />
                   </div>
                 )}
               </div>

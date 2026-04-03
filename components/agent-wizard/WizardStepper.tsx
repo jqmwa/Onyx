@@ -20,7 +20,7 @@ export function WizardStepper({ steps, onClose }: WizardStepperProps) {
     <div className="flex items-stretch bg-onyx-surface-dark">
       <button
         onClick={onClose}
-        className="flex items-center justify-center w-14 border-r border-white/10 text-onyx-text-on-dark hover:text-white transition-colors"
+        className="flex items-center justify-center w-14 border-r border-white/10 text-onyx-text-on-dark/70 hover:text-white transition-colors"
         aria-label="Close wizard"
       >
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -36,10 +36,8 @@ export function WizardStepper({ steps, onClose }: WizardStepperProps) {
         {steps.map((step, i) => (
           <div
             key={step.id}
-            className={`flex-1 flex items-center justify-between px-5 py-3.5 border-r border-white/10 last:border-r-0 ${
-              step.status === "current"
-                ? "bg-onyx-surface-darker"
-                : ""
+            className={`flex-1 flex items-center justify-between px-5 py-3.5 border-r border-white/8 last:border-r-0 ${
+              step.status === "current" ? "bg-onyx-surface-darker" : ""
             }`}
           >
             <div className="flex-1 min-w-0">
@@ -47,9 +45,7 @@ export function WizardStepper({ steps, onClose }: WizardStepperProps) {
                 className={`font-mono text-2xs uppercase tracking-[0.12em] mb-0.5 ${
                   step.status === "complete"
                     ? "text-onyx-complete"
-                    : step.status === "current"
-                      ? "text-onyx-text-on-dark-muted"
-                      : "text-onyx-text-on-dark-muted"
+                    : "text-onyx-text-on-dark-muted"
                 }`}
               >
                 {step.status === "complete"
@@ -66,15 +62,18 @@ export function WizardStepper({ steps, onClose }: WizardStepperProps) {
               </div>
             </div>
             {step.status === "complete" && (
-              <Check size="sm" className="ml-3 text-onyx-complete flex-shrink-0" />
+              <Check
+                size="sm"
+                className="ml-3 text-onyx-text-on-dark-muted flex-shrink-0"
+              />
             )}
             {step.status === "current" && (
-              <div className="ml-3 flex gap-1 flex-shrink-0">
+              <div className="ml-4 flex gap-1.5 flex-shrink-0">
                 {steps.map((_, j) => (
                   <div
                     key={j}
-                    className={`w-1.5 h-1.5 rounded-full ${
-                      j <= i ? "bg-white" : "bg-white/30"
+                    className={`w-[5px] h-[5px] rounded-[1px] ${
+                      j <= i ? "bg-white" : "bg-white/25"
                     }`}
                   />
                 ))}

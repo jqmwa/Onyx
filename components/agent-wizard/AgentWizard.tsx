@@ -171,7 +171,7 @@ export function AgentWizard() {
             </p>
 
             {/* Step indicators */}
-            <div className="mt-8 space-y-1">
+            <div className="mt-8 space-y-0.5">
               {STEPS.map((s, i) => (
                 <button
                   key={s.id}
@@ -181,12 +181,10 @@ export function AgentWizard() {
                   }`}
                 >
                   <div
-                    className={`step-circle ${
+                    className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-mono font-medium flex-shrink-0 transition-all duration-200 ${
                       i === currentStep
-                        ? "step-circle-active"
-                        : i < currentStep
-                          ? "step-circle-complete"
-                          : "step-circle-pending"
+                        ? "bg-onyx-active text-white"
+                        : "bg-onyx-circle-bg text-onyx-circle-icon"
                     }`}
                   >
                     {i < currentStep ? (
